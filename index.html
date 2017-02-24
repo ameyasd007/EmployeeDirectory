@@ -1,26 +1,61 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>Employee Directory</title>
-        <meta name="viewport" content="width=device-width,initial-scale=1"/>
-        <link rel="stylesheet" href="css/styles.css" />
-    </head>
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
-    <body>
-        
-	<div id="header" class="header">
-		<h1>Employee Directory</h1>
-	</div>
-	<div id="header2">
-		<h2>Employee List</h2>
-	</div>
-	
-	<div id="wrapper">
-		<ul id="employeeList" class="icon-list"></ul>
-	</div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="mine.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+</head>
 
-	<div id="busy"/>Loading...</div>
+<body>
+  <div data-role="page" id="pageone" >
+    <div data-role="panel" id="mySidenav" data-display="overlay" style="background: #2E2E2E"> 
+      <div data-role="content" id="content">
+        <form class="ui-filterable">
+          <input id="myFilter" data-type="search" placeholder="Search for books..">
+        </form>
+        <ul id="list" data-role="listview" data-filter="true" data-input="#myFilter" data-inset="true" style="color:#fff">
+        </ul>
+      </div>
+    </div> 
 
+    <div data-role="header" style="background: #664822; line-height: 1">
+      <a href="#mySidenav" class="ui-btn ui-icon-bars ui-btn-icon-notext"></a>
+      <h1 style="color: #fff; font-weight: normal; font-family: Verdana, Geneva, Tahoma, sans-serif">FinIQ Pitchbook</h1>
+    </div>
+
+    <div>
+      <img src="finiq_header.png" alt="finiq_header" width="100%" height="20%">
+    </div>
+
+<div class="w3-container">
+    <div class="w3-card-8 w3-red" >
+      <h1>card view</h1>
+    </div>
+</div>
+
+    <div class="container" style="overflow-x: scroll; height: 50%">
+      <table id="card_table_home">
+        <tr>
+          <!--<td>
+            <div class="card">
+              <h3>Yellow book</h3>
+              <div class="card-image" >
+                  <img src="book.png"/>
+              </div>
+            </div>
+          </td>-->
+        </tr>
+      </table>
+    </div>
+  </div> 
+
+<script type="text/javascript" src="./webservices.js"></script>
 	<script src="js/phonegap.js"></script>
     <script src="js/jquery.js"></script>
     <script src="js/iscroll.js"></script>
